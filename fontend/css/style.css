@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:black ;
+    color: white;
+}
+.form {
+    margin: 0;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.form-header span img {
+    margin-left: 30%;
+    margin-top: 4px;
+}
+.form-header a, a.header-link {
+    font-family: fantasy;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: absolute;
+    top: 10%;
+    margin-left: 5%;
+}
+.col-25 {
+    margin-top: 10px;
+    width: 25%;
+    float: left;
+}
+.col-75 {
+    margin-top: 10px;
+    width: 75%;
+    float: right;
+}
+input[type=text], input[type=password], textarea, select {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+::placeholder {
+    text-align: center; 
+}
+input[type=submit] {
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: underline red;
+}
+input[type=submit]:focus{
+    background-color: rgb(94, 1, 1);
+    color: rgb(255, 255, 255)
+}
+label {
+    display: inline-block;
+}
+/* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
